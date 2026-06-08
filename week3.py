@@ -137,3 +137,19 @@ if current_total>=60:
 print(f"Final Total: ${current_total}")
 print("Thank you for registering!")
 
+#Guessing Game
+correct_answer="Turkey"
+chances=3
+while chances>0:
+    answer=str(input("Which country became independent in 1923?: "))
+    if answer==correct_answer:
+        print("You got it! You won!")
+        break
+    else:
+        print("Incorrect, Try again!")
+        chances-=1
+        print(f"You have {chances} chances left")
+        print()
+if chances==0:
+    print("You are run out of chances")
+    print("you lost!")
